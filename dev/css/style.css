@@ -1,0 +1,554 @@
+body
+{
+ margin: 0;
+ font-family: "Space Grotesk", sans-serif;
+ font-size: medium;
+}
+
+/*TOPBANNER*/
+#topbanner
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #aea62f;
+  height: 4vh;
+  color: white;
+}
+
+/*NAVBAR*/
+header
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 10vh;
+}
+
+header div a
+{
+  text-decoration: none;
+  color: black;
+  font-size: 150%;
+}
+
+header a:hover
+{
+  text-decoration: underline;
+  font-weight: bold;
+  color: #629677;
+}
+
+
+.left-header
+{
+  display: flex;
+  align-items: center;
+  width: 25vw;
+  margin-left: 2vw;
+}
+
+.logonaam
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 2vw;
+}
+
+.logonaam:hover
+{
+  text-decoration: none;
+  font-weight: normal;
+  color: black;
+}
+
+.right-header
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 25vw;
+}
+
+/*HOMEPAGE*/
+.mainintro
+{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#mainphoto
+{
+  object-fit: cover;
+  object-position: 0% 60%;
+  width: 100vw;
+  height: 70vh;
+  opacity: 80%;
+}
+
+.adbutton
+{
+  color: white;
+  position: absolute;
+  top: 70%;
+  padding: 1.5%;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 200%;
+  background-color: #aea62f;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);;
+}
+
+.adbutton:hover
+{
+  cursor: pointer;
+}
+
+.grid-container
+{
+  display: grid;
+  grid-template-columns: 20vw 20vw 20vw;
+  grid-template-rows: 55vh 55vh 55vh;
+  gap: 1vw;
+  justify-content: right;
+  margin-right: 5vw;
+}
+
+/*PRODUCT CATEGOERIEN*/
+.product-categorien
+{
+  margin-left: 2%;
+  width: 20vw;
+}
+
+.product-categorien div
+{
+  font-weight: bold;
+}
+
+/*PRODUCT PLACE*/
+.product-container
+    {
+      display: flex;
+      flex-direction: column;
+      height: 55vh;
+      width: 20vw;
+      border: 2px solid #629677;
+    }
+
+    .product-photo
+    {
+      height: 40vh;
+      width: 20vw;
+      object-fit: cover;
+      object-position: 50% 20%;
+    }
+
+    .product-description-flexbox
+    {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 10vh;
+      width: 20vw;
+    }
+
+    .product-name
+    {
+      font-size: 20px;
+      margin-left: 5%;
+    }
+
+    .product-price
+    {
+      font-size: 15px;
+      margin-left: 5%;
+    }
+
+    .product-beschrijving
+    {
+      font-size: 15px;
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+
+/*WINKELWAGEN*/
+.betaal-overzicht
+{
+  margin-top: 3vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.producten-lijst
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.winkelwagen-producten
+{
+  background-color: #629677;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  width: 50vw;
+  height: 20vh;
+  padding: 2%;
+  margin-right: 3vw;
+}
+
+.winkelwagen-betaaloverzicht
+{
+  background-color: #629677;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.winkelwagen-producten-fotos
+{
+  width: 10vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-photo-winkelwagen
+{
+  height: 20vh;
+  width: 10vw;
+  object-fit: cover;
+}
+
+.winkelwagen-producten-info
+{
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  justify-content: center;
+  padding: 6%;
+
+}
+
+.winkelwagen-product-aantal
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.winkelwagen-product-aantal input
+{
+  width: 20%;
+}
+
+.winkelwagen-betaaloverzicht
+{
+  width: 20vw;
+  height: 45vh;
+  margin-left: 3vw;
+  margin-bottom: 3vh;
+  padding: 2%;
+}
+
+.winkelwagen-subtotaal
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 4%;
+}
+
+.winkelwagen-totaal
+{
+  background-color: white;
+  color: black;
+  padding: 4%;
+  border-radius: 20px;
+}
+
+.winkelwagen-totaal-button
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 8%;
+  margin-bottom: 6%;
+}
+
+.winkelwagen-totaal-button button
+{
+  padding: 6%;
+  width: 50%;
+  color: white;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: medium;
+  background-color: #aea62f;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
+}
+
+.winkelwagen-totaal-button button:hover
+{
+  cursor: pointer;
+}
+
+.winkelwagen-gratis
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4%;
+  font-size: small;
+}
+
+/*INLOG PAGINA*/
+.inlog-container
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.inlog-fout
+{
+  background-color: rgba(255, 0, 0, 0.3);
+  margin: 2%;
+}
+
+.inlog-section
+{
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+}
+.inlog-section input
+{
+  font-family: "Space Grotesk", sans-serif;
+  background-color: #d9d9d9;
+  color: black;
+  border: none;
+  height: 5vh;
+  font-size: medium;
+  margin-top: 5%;
+  padding: 1%;
+}
+
+.inlog-groet
+{
+  font-size: 150%;
+  margin-top: 5%;
+}
+
+.inlog-button
+{
+  width: 100%;
+  background-color: #629677;
+  border: none;
+  color: white;
+  height: 5vh;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: medium;
+  margin: 5% 0% 5% 0%;
+  padding: 1%;
+}
+
+.inlog-button:hover
+{
+  cursor: pointer;
+}
+
+.inlog-button:active
+{
+  opacity: 0.8;
+}
+
+/*BESTEL PAGINA*/
+.bestel-header
+{
+  font-family: "Space Grotesk", sans-serif;
+  display: flex;
+  flex-direction: row;
+  font-size: 125%;
+  height: 10vh;
+  margin-bottom: 5vh;
+}
+
+.bestel-header-1
+{
+  height: inherit;
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  align-items: center;
+  padding: 20px;
+}
+
+.page-active
+{
+  font-weight: bold;
+  background-color: #aea62f;
+  padding: 5px 15px;
+  margin-right: 4%;
+}
+
+.page-notactive
+{
+  font-weight: bold;
+  background-color: #d9d9d9;
+  padding: 5px 15px;
+  margin-right: 4%; 
+}
+
+/*BETALINGS PAGINA*/
+.betalings-container
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: white;
+}
+
+.info-container
+{
+  background-color: #629677;
+  padding: 20px;
+  width: 50vw;
+  height: auto;
+}
+
+.kies-verzend
+{
+  display: flex;
+  flex-direction: row;
+  background-color: #d9d9d9;
+  color: black;
+  width: 100%;
+}
+
+.kies-verzend-klikbaar
+{
+  width: 50%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.verzend-methode
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.prijs-info-container
+{
+  background-color: #629677;
+  padding: 20px;
+  width: 20vw;
+  height: 40vh;
+}
+
+.bestel-overzicht
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.betaal-button
+{
+  background-color: #aea62f;
+  border: none;
+  color: white;
+  padding: 2%;
+  font-size: medium;
+  margin: 1%;
+}
+
+.betaal-button:hover
+{
+  cursor: pointer;
+}
+
+.betaal-button:active
+{
+  opacity: 0.8;
+}
+
+/*BEDANK PAGINA*/
+.bedank-bericht
+{
+  background-color: #629677;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+  position: relative;
+  width: 50%;
+  left: 25%;
+  right: 25%;
+}
+
+/*FOOTER*/
+    footer
+    {
+      margin-top: 5vh;
+      height: 30vh;
+      display: flex;
+      flex-direction: row;
+      background-color: #629677;
+    }
+
+    .left-footer
+    {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .footer-logo
+    {
+      width: 20%;
+    }
+
+    .mid-footer
+    {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .mid-footer p, .right-footer p
+    {
+      font-size: 120%;
+      font-weight: bold;
+    }
+
+    .mid-footer a, .right-footer a
+    {
+      color: white;
+    }
+
+    .right-footer
+    {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
